@@ -7,13 +7,13 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css")
-        link(rel="stylesheet", href="./../CSS/styles.css")
+        link(rel="stylesheet", href="./CSS/styles.css")
         link(rel="preconnect", href="https://fonts.googleapis.com" crossorigin)
         link(rel="preconnect", href="https://fonts.gstatic.com")
         link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap")
         link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/glider-js/glider.min.css")
-        link(rel="stylesheet", media="(min-width: 700px)", href="./../CSS/syles-medium.css")
-        link(rel="stylesheet", media="(min-width: 1200px)", href="./../CSS/syles-big.css")
+        link(rel="stylesheet", media="(min-width: 700px)", href="./CSS/syles-medium.css")
+        link(rel="stylesheet", media="(min-width: 1200px)", href="./CSS/syles-big.css")
 
 
 
@@ -23,7 +23,7 @@ html(lang="en")
             
             .logo 
                 .logo__content
-                    img(src="./../CSS/img/logo.svg", alt="logo").logo__img
+                    img(src="./CSS/img/logo.svg", alt="logo").logo__img
                     h1.logo__title surfing
                         spam.logo__title-spam vpn
                 
@@ -37,7 +37,7 @@ html(lang="en")
         main.main 
             .box-1 
                 div(class="box-1__section-1 box-1__section--1") 
-                    img(src="./../CSS/img/ilustarion-main.png", alt="illustration").box-1__img
+                    img(src="./CSS/img/ilustarion-main.png", alt="illustration").box-1__img
                     h1.box-1__title SECURE YOUR LIFE
                     p.box-1__sub-title Browse the web safely & privately
                 div(class="box-1__section-1 box-1__section--2")
@@ -53,7 +53,7 @@ html(lang="en")
                  for i, n in ["QUICK CONNECTIVITY", "HIGHLY SECURE", "UNLIMITED DEVICES", "HIGH SPEED"]
                  
                      div( class="box-2__flex-item" class="item-" + n)
-                         img(src="./../CSS/img/check.svg", alt="check").box-2__img
+                         img(src="./CSS/img/check.svg", alt="check").box-2__img
                          h1.title=i
 
             .box-3 
@@ -69,7 +69,7 @@ html(lang="en")
                 .box-4__carousel
                     for i, n in ["Browse privately", "Encryption", "Bypass", "Clean web", "No logging", "Kill switch"]
                         .box-4__item
-                            img(src="./../CSS/img/features-" + i + ".svg", alt="check").box-4__img
+                            img(src="./CSS/img/features-" + i + ".svg", alt="check").box-4__img
                             p.box-4__text=i
                 .button-container
                     button(arial-label="Before" class="box-4__before")
@@ -88,7 +88,7 @@ html(lang="en")
                     for i, n in ["1. DOWNLOAD", "2. SELECT SERVER", "3. ACTIVATE & GO!"]
                         .box-5__flex-item
                             .box-5__img-bg
-                                img(src="./../CSS/img/vector-" + i + ".svg", alt="img").box-5__img-icon
+                                img(src="./CSS/img/vector-" + i + ".svg", alt="img").box-5__img-icon
                             h1.box-5__text=i
 
             .box-6 
@@ -99,12 +99,12 @@ html(lang="en")
             .box-7
                 for i, n in ["Use PrivateSurf VPN on every device", "One click to a safer internet", "Secure access, worldwide", "Stronger data protection"]
                     div.box-7__flex-item
-                        img(src="./../CSS/img/check.svg", alt="check").box-7__img
+                        img(src="./CSS/img/check.svg", alt="check").box-7__img
                         h1(class="box-7__p title title")=i
         
 
             .box-8 
-                img(src="./../CSS/img/img-vpn.jpg", alt="robot").box-8__img
+                img(src="./CSS/img/img-vpn.jpg", alt="robot").box-8__img
                 button.button GET STARTED
         footer.footer
             .footer__links
@@ -116,5 +116,5 @@ html(lang="en")
                 i.ri-youtube-line
                 i.ri-twitch-fill
         script(src="https://cdn.jsdelivr.net/npm/glider-js/glider.min.js")
-        script(src="./../JS/script.js") 
+        script(src="./JS/script.js") 
 
