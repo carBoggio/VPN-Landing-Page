@@ -1,0 +1,120 @@
+
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css")
+        link(rel="stylesheet", href="./../CSS/styles.css")
+        link(rel="preconnect", href="https://fonts.googleapis.com" crossorigin)
+        link(rel="preconnect", href="https://fonts.gstatic.com")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap")
+        link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/glider-js/glider.min.css")
+        link(rel="stylesheet", media="(min-width: 700px)", href="./../CSS/syles-medium.css")
+        link(rel="stylesheet", media="(min-width: 1200px)", href="./../CSS/syles-big.css")
+
+
+
+        title Document
+    body 
+        header.header 
+            
+            .logo 
+                .logo__content
+                    img(src="./../CSS/img/logo.svg", alt="logo").logo__img
+                    h1.logo__title surfing
+                        spam.logo__title-spam vpn
+                
+                i(class="ri-menu-line logo-ham__img")
+            nav.nav 
+
+                p.nav-item Features
+                p.nav-item Why a VPN?
+                button(class=" button") GET STARTED
+
+        main.main 
+            .box-1 
+                div(class="box-1__section-1 box-1__section--1") 
+                    img(src="./../CSS/img/ilustarion-main.png", alt="illustration").box-1__img
+                    h1.box-1__title SECURE YOUR LIFE
+                    p.box-1__sub-title Browse the web safely & privately
+                div(class="box-1__section-1 box-1__section--2")
+                    .box-1__sec 
+                        h1.box-1__sec-title PROTECT ALL YOUR DEVICES
+                        button.box-1__sec-button GET STARTED
+                        p.box-1__sec-p Buy Trial License for USD1, EUR1, GBP1
+                    .bottom__cancel CANCEL MY MEMBERSHIP
+
+             
+            .box-2 
+                
+                 for i, n in ["QUICK CONNECTIVITY", "HIGHLY SECURE", "UNLIMITED DEVICES", "HIGH SPEED"]
+                 
+                     div( class="box-2__flex-item" class="item-" + n)
+                         img(src="./../CSS/img/check.svg", alt="check").box-2__img
+                         h1.title=i
+
+            .box-3 
+                h1(class="section-title box-3__h1") Why use a VPN?
+                p.box-3__p Using the internet these days is more daunting than ever, with many types of cyberthreats. There is only one true way to use the internet privately, and that is with a VPN or Virtual Private Network.
+                    
+
+            .box-4 
+
+                h1.section-title Features
+
+            .box-4-carousel-container
+                .box-4__carousel
+                    for i, n in ["Browse privately", "Encryption", "Bypass", "Clean web", "No logging", "Kill switch"]
+                        .box-4__item
+                            img(src="./../CSS/img/features-" + i + ".svg", alt="check").box-4__img
+                            p.box-4__text=i
+                .button-container
+                    button(arial-label="Before" class="box-4__before")
+                        i(class="ri-arrow-left-circle-line")
+                    button(arial-label="After" class="box-4__after")
+                        i(class="ri-arrow-right-circle-line")
+                .box-4__carousel-indicators(role="tablist")
+
+            .box-5
+                h1(class="box-5__title section-title") PRIVACY AND PROTECTION 
+                    spam.box-5__title-spam IN THREE STEPS
+
+            
+                .box-5__flex-container
+                    
+                    for i, n in ["1. DOWNLOAD", "2. SELECT SERVER", "3. ACTIVATE & GO!"]
+                        .box-5__flex-item
+                            .box-5__img-bg
+                                img(src="./../CSS/img/vector-" + i + ".svg", alt="img").box-5__img-icon
+                            h1.box-5__text=i
+
+            .box-6 
+                h1(class="box-5__title section-title") PROTECT 
+                    spam.box-5__title-spam ALL YOUR DEVICES
+                p.box-5__p PRIVATESURF VPN IS AN APPLICATION DESIGNED FOR YOU:
+
+            .box-7
+                for i, n in ["Use PrivateSurf VPN on every device", "One click to a safer internet", "Secure access, worldwide", "Stronger data protection"]
+                    div.box-7__flex-item
+                        img(src="./../CSS/img/check.svg", alt="check").box-7__img
+                        h1(class="box-7__p title title")=i
+        
+
+            .box-8 
+                img(src="./../CSS/img/img-vpn.jpg", alt="robot").box-8__img
+                button.button GET STARTED
+        footer.footer
+            .footer__links
+                for i, n in ["Privacy Policy", "Terms and conditions", "Contact", "How to uninstall"]
+                    p.footer__link=i
+            .footer__social-media
+                i.ri-whatsapp-line
+                i.ri-instagram-line
+                i.ri-youtube-line
+                i.ri-twitch-fill
+        script(src="https://cdn.jsdelivr.net/npm/glider-js/glider.min.js")
+        script(src="./../JS/script.js") 
+

@@ -1,0 +1,108 @@
+@use "variables.scss";
+
+$padding-space: 4rem;
+$header-height: 7rem;
+$logo-size: 4.374rem;
+$ham-menu-size: 2.8rem;
+
+html {
+    font-size: 62.5%;
+}
+body {
+    background-color: variables.$back-color-1 ;
+    padding: 0 5px;
+}
+
+.hidden {
+    overflow-y: hidden;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0 1rem;
+    }
+
+    &-ham__img {
+        font-size: $ham-menu-size;
+    }
+
+    &__title-spam {
+        color: variables.$main-color;
+    }
+    
+}
+
+.logo__img {
+    width: $logo-size;
+    height: $logo-size;
+}
+
+.header {
+    width: 100%;
+    height: $header-height;
+    
+    padding: 0 $padding-space 0 $padding-space; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    position: fixed;
+    top: 0;
+    background-color: variables.$back-color-1 ;
+    z-index: 400;
+}
+
+
+
+.nav {
+    position: fixed;
+    top: $header-height;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    padding-top: 5rem;
+    gap: 4.4rem 0;
+    background-color: variables.$back-color-1 ;
+    transition: all 0.3s ease;
+
+
+    &-item{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 21.8947px;
+        line-height: 26px;
+    }
+
+    &-item__button {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.51579rem;
+        line-height: 1.8rem;
+        width: 25.042rem;
+        height: 4.6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: variables.$main-color;
+        border-radius: 12.6316px;
+
+    }
+}
+
+.rigth {
+    left: 100%;
+}
+

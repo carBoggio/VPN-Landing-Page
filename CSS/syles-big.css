@@ -1,0 +1,46 @@
+.box-1 {
+  flex-direction: row;
+  display: flex;
+}
+.box-1__section-1 {
+  width: 25%;
+}
+.box-1__section--2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.box-1__section--1 {
+  width: 65%;
+}
+.box-1__sec {
+  margin-top: 10rem;
+  border-radius: 10px;
+  width: 40rem;
+}
+
+.box-2, .box-7 {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 2fr;
+  margin-top: 9rem;
+}
+.box-2__flex-item, .box-7__flex-item {
+  margin-right: 2rem;
+}
+.box-2__flex-container, .box-7__flex-container {
+  flex-direction: row;
+  gap: 4rem 7.5rem;
+}
+
+.title {
+  width: 150px;
+}
+
+.nav {
+  width: 40%;
+}
+
+.box-5__flex-container {
+  flex-direction: row;
+}/*# sourceMappingURL=syles-big.css.map */

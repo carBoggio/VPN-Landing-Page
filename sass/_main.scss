@@ -1,0 +1,422 @@
+@use "variables.scss";
+
+$padding-space: 4rem;
+$header-height: 7rem;
+$logo-size: 4.374rem;
+$ham-menu-size: 2.8rem;
+
+
+.title {
+    width: 22.411rem;
+}
+
+
+.main {
+    margin-top: $header-height;
+}
+
+
+// box 1--------------------------------------
+
+
+.box-1__section-1 {
+    color: white;
+}
+
+.box-1 {
+    &__section-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+        gap: 3rem 0 ;
+        
+
+    }    
+    &__img {
+        width: calc(100% - $logo-size * 2);
+        min-width: 300px;
+        max-width: 520px;
+}
+        // min-width: 350px;
+    
+    &__title {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 29.9217px;
+        line-height: 33px;
+        color: variables.$main-color;
+    }
+    &__sub-title {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19.082px;
+        line-height: 19px;
+        text-align: center;
+    }
+
+}
+// box 2--------------------------------------
+
+
+.box-1__sec {
+    background: variables.$button-color-1;
+    width: calc(100% - 2.6rem * 2);
+    min-width: 300px;
+    height: 16.468rem;
+    max-width: 400px;
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.4rem;
+
+
+    &-title {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.95246rem;
+        line-height: 16px;
+    }
+    &-button, .button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 7.88935px 38.8832px;
+    gap: 25.36px;
+
+    width: 171.77px;
+    height: 31.78px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13.5246px;
+    line-height: 16px;
+
+    background: variables.$main-color;
+    border-radius: 11.2705px;
+    }
+
+    &-p {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.31639rem;
+        line-height: 11px;
+    }
+}
+.bottom__cancel {
+    width: 223px;
+    height: 36.39px;
+
+    background: variables.$button-color-1;
+    border-radius: 7.74306px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12.3889px;
+    line-height: 15px;
+}
+
+// box 2 ----------------------------------
+
+
+.box-2, .box-7 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem 0;
+    margin-top: 3rem;
+    &__flex-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem 2rem;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 19px;
+        width: 24.5rem;
+        color: #FFFFFF;
+    }
+    &__img {
+        width: 5.5rem;
+    }
+    &__p {
+        font-size: 1.8em;
+    }
+
+
+}
+
+.box-3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 4rem;
+    gap: 2rem 1rem;
+    margin-bottom: 4rem;
+    &__p {
+        font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16.082px;
+    line-height: 19px;
+    text-align: justify;
+    color: white;
+    max-width: 400px;
+    padding: 0 10px 0 10px;
+    }
+    &__h1 {
+        font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26.9217px;
+    line-height: 33px;
+    color: variables.$main-color;
+    }
+}
+
+.section-title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26.9217px;
+    line-height: 33px;
+    color: variables.$main-color;
+    margin: 4rem 0 2rem 0;
+}
+
+
+
+.box-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0 5rem;
+    
+    &-carousel-container {
+        position: relative;
+        z-index: 1;
+    }
+    &__img {
+        width: 11.9rem;
+    }
+
+    &__text {
+        font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    }
+    &__carousel {
+        margin-bottom: 3rem;
+
+        @media (min-width:1019px) {
+            
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            
+        }
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem 0;
+    }
+} 
+
+.display-none {
+    display: none;
+}
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 5rem;
+    margin-top: 3rem;
+} 
+
+
+.box-4__before, .box-4__after {
+    font-size: 3rem;
+    background-color: variables.$back-color-1 ;
+    color: variables.$main-color;
+}
+.glider-dot.active {
+    background-color:variables.$main-color !important;
+}
+
+
+// box 5-------------------------------------
+
+$size-icon: 12rem;
+.box-5 {
+    background: variables.$button-color-1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem 1rem;
+    padding-bottom: 3rem;
+    text-align: center;
+
+    &__title {
+        text-align: center;
+    }
+    &__img-bg {
+        background: url(./../CSS/img/Ellipse.svg) no-repeat center center;
+        background-size: cover;
+        width: $size-icon;
+        height: $size-icon;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    &__text {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15.0513px;
+        line-height: 18px;
+        color: white;
+    }
+    &__img-icon {
+        width: calc($size-icon - 5rem);
+    }
+    &__title-spam {
+        color: white;
+    }
+    &__flex-container {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        flex-direction: column;
+    }
+    &__flex-item {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem 2rem;
+    }
+
+    &__p {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        width: calc(100% - 8rem);
+        color: #FFFFFF;
+    }
+
+}
+
+
+.box-6 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    &__title-spam {
+        color: variables.$main-color;;
+    }
+    @media (min-width: 564px) {
+        text-align: center;
+    }
+}
+
+
+
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 7.88935px 38.8832px;
+    gap: 25.36px;
+
+    width: 171.77px;
+    height: 31.78px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13.5246px;
+    line-height: 16px;
+    color: white;
+    background: variables.$main-color;
+    border-radius: 11.2705px;
+}
+
+.box-8 {
+    margin: 4rem 0 4rem 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem 0;
+    &__img {
+        width: calc(100% - 8rem);
+        max-width: 430px;
+    }
+}
+
+// footer ------------------------------------
+
+.footer {
+    padding: 0 2rem 0 2rem;
+    background: variables.$button-color-1;
+
+    
+    &__links {
+        text-align: center;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
+        width: 100%;    
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 4rem;
+        padding: 2rem 0 2rem 0;
+    }
+
+    &__link {
+        width: 15rem;
+    }
+
+    &__social-media {
+        font-size: 3rem;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+        padding: 3rem 0 3rem 0;
+    }
+}
+
+@media (min-width:910px) {
+    .box-4__after, .box-4__before, .glider-dot {
+        display: none !important;
+    }
+
+}

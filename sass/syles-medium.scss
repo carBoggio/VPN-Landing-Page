@@ -1,0 +1,54 @@
+@use "variables.scss";
+$header-height: 7rem;
+
+
+
+.logo-ham__img {
+    display: none;
+}
+
+.nav {
+    position: static;
+    height: $header-height;
+    flex-direction: row;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    width: 70%;
+    margin-left: 1rem;
+    @media (min-width: 830px) {
+        width: 50%;
+        margin: 1rem;
+    }
+
+    &-item {
+        font-size: 1.8rem;
+
+    }
+}
+
+.logo {
+    width: 30%;
+}
+
+
+
+.box-2, .box-7 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 2fr;
+
+    &__flex-item {
+       width: 100%; 
+    }
+    
+}
+
+.box-5 {
+    &__flex-container {
+        flex-direction: row;
+        gap: 7.5rem;
+    }
+}
